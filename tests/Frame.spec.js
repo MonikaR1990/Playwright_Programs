@@ -1,5 +1,4 @@
 import {test, expect} from '@playwright/test';
-import { waitForDebugger } from 'node:inspector';
 
 // test('page.frame', async({page})=>{
 //   await page.goto("https://practice-automation.com/iframes/");

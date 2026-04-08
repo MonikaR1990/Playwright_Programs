@@ -1,0 +1,17 @@
+
+{
+  "name": "cucumber-playwright-framework",
+  "version": "1.0.0",
+  "description": "Cucumber Playwright Framework",
+  "type": "module",
+  "scripts": {
+    "test": "cucumber-js features/**/*.feature --import steps/**/*.js --import hooks/**/*.js --format progress --format json:reports/cucumber-report.json",
+    "report": "node report.js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.7.0",
+    "@playwright/test": "^1.42.0",
+    "playwright": "^1.42.0",
+    "multiple-cucumber-html-reporter": "^3.10.0"
+  }
+}

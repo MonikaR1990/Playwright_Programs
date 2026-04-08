@@ -46,3 +46,17 @@ test('API test', async({request})=>
     const response = await request.get('https://reqres.in/api/users');
     console.log(response.json)
 });
+
+test('Multi User Login', async ({ browser }) => {
+
+  const context1 = await browser.newContext();
+  const page1 = await context1.newPage();
+  await page1.goto('https://www.google.com/');
+  // user1 login
+
+  const context2 = await browser.newContext();
+  const page2 = await context2.newPage();
+  await page2.goto('https://www.gmail.com/');
+  // user2 login
+
+});

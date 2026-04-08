@@ -1,0 +1,106 @@
+[
+  {
+    "description": "  As a new user\n  I want to register on the My Account page\n  So that I can access account features after login",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-registration;successful-registration-with-unique-email",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Successful registration with unique email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2794209899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launches browser",
+            "match": {
+              "location": "features\\step-definitions\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 942145300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user navigates to my account page",
+            "match": {
+              "location": "features\\step-definitions\\registerSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10527818900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user enters email and password",
+            "match": {
+              "location": "features\\step-definitions\\registerSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142416900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user should be registered successfully",
+            "match": {
+              "location": "features\\step-definitions\\registerSteps.js:27"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20010006000,
+              "error_message": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('p:has-text(\"Hello\")') to be visible\u001b[22m\n\n    at RegistrationPage.isRegisteredSuccessfully (F:\\TechNG\\Playwright_12pm\\tests\\CucumberProject1\\pages\\RegistrationPage.js:31:31)\n    at async World.<anonymous> (F:\\TechNG\\Playwright_12pm\\tests\\CucumberProject1\\features\\step-definitions\\registerSteps.js:28:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "close the browser",
+            "match": {
+              "location": "features\\step-definitions\\registerSteps.js:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 384708899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-registration",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Registration",
+    "tags": [],
+    "uri": "features\\register.feature"
+  }
+]

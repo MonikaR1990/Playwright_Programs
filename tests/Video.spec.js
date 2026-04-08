@@ -1,6 +1,7 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 
-test('Video Recording Example', async ({ page }) => {
+test('Video Recording Example', async ({ page }) => 
+    {
 
     await page.goto('https://letcode.in');
 
@@ -11,5 +12,14 @@ test('Video Recording Example', async ({ page }) => {
     await page.waitForTimeout(2000);
 
     await page.goBack();
+
+});
+
+test('Video Example - Failure Case', async ({ page }) => {
+
+  await page.goto('https://letcode.in');
+
+  // Intentionally wrong title to FAIL the test
+  await expect(page).toHaveTitle('Wrong Title');
 
 });

@@ -11,6 +11,8 @@ test('Handling Alert Dialog Box', async ({ page }) => {
   {
     await page.waitForTimeout(2000);    
     
+    
+
     dialog.type();
     console.log(dialog.message());
     dialog.accept("Hello World");
