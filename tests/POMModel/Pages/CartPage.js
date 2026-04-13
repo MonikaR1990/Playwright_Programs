@@ -33,7 +33,7 @@ export class CartPage
         return await this.productQuantity.nth(index).textContent();
     }
 
-    async getTotalPrice()
+    async getTotalPrice(index)
     {
         return await this.productTotalPrice.nth(index).textContent();
     }
